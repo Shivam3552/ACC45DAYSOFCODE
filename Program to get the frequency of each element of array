@@ -1,0 +1,62 @@
+#include<stdio.h>
+void
+main ()
+{
+  
+int n;
+  
+printf ("enter number of elements in array\n");
+  
+scanf ("%d", &n);
+  
+int a[n];
+  
+for (int i = 0; i < n; i++)
+    {
+      
+printf ("enter a[%d]: ", i);
+      
+scanf ("%d", &a[i]);
+  
+} 
+for (int i = 0; i < n; i++)
+    {
+      
+int p = 0;
+      
+for (int j = 0; j < i; j++)
+	{
+	  
+if (a[i] == a[j])
+	    {
+	      
+p++;
+	    
+}
+	
+}
+      
+if (p == 0)
+	{
+	  
+int c = 1;
+	  
+for (int j = i + 1; j < n; j++)
+	    {
+	      
+if (a[i] == a[j])
+		{
+		  
+c++;
+		
+}
+	    
+}
+	  
+printf ("%d is %d times in array\n", a[i], c);
+	
+}
+    
+}
+
+}
