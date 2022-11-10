@@ -1,0 +1,44 @@
+#include<stdio.h>
+int
+max (int c[], int n)
+{
+  
+int max = c[0];
+  
+for (int i = 1; i < n; i++)
+    {
+      
+if (c[i] > max)
+	{
+	  
+max = c[i];
+	
+}
+    
+ 
+}
+  return max;
+}
+
+
+void
+main ()
+{
+  
+int a[] = { 1, 23, 12, 2, 34, 67 };
+  
+int k = sizeof (a) / 4;
+  
+int l = max (a, k);
+  
+printf ("the maximum element of a[] is %d\n", l);
+  
+int b[] = { 12, 23, 32, 12, 23, 25 };
+  
+k = sizeof (b) / 4;
+  
+l = max (b, k);
+  
+printf ("the maximum element of b[] is %d", l);
+
+}
