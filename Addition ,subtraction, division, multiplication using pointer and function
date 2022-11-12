@@ -1,0 +1,72 @@
+#include<stdio.h>
+int
+add (int *a, int *b)
+{
+  return *a + *b;
+}
+
+int
+sub (int *a, int *b)
+{
+  if (*a > *b)
+    {
+      return *a - *b;
+    }
+  else
+    {
+      return *b - *a;
+    }
+}
+
+int
+mul (int *a, int *b)
+{
+  return *a * *b;
+}
+
+int
+div (int *a, int *b)
+{
+  if (*a > *b)
+    {
+      return (*a / *b);
+    }
+  else
+    {
+      return *b / *a;
+    }
+}
+
+void
+main ()
+{
+  char ch;
+  printf ("enter character");
+  scanf ("%c", &ch);
+  int a, b, c;
+  printf ("enter a and b");
+  scanf ("%d %d", &a, &b);
+  switch (ch)
+    {
+    case 'a':
+      c = add (&a, &b);
+      printf ("%d", c);
+      break;
+    case 'm':
+      c = mul (&a, &b);
+      printf ("%d", c);
+      break;
+    case 's':
+      c = sub (&a, &b);
+      printf ("%d", c);
+      break;
+    case 'd':
+      c = div (&a, &b);
+      printf ("%d", c);
+      break;
+    default:
+      printf ("enter valid input");
+    }
+
+
+}
