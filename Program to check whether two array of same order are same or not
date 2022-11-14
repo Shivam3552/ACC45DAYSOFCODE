@@ -1,0 +1,57 @@
+question no ;3   #include<stdio.h>
+void
+main ()
+{
+  
+int n, p = 0;
+  
+printf ("enter number of element in array\n");
+  
+scanf ("%d", &n);
+  
+int a[n], b[n];
+  
+for (int i = 0; i < n; i++)
+    {
+      
+printf ("a[%d]= ", i);
+      
+scanf ("%d", &a[i]);
+  
+} 
+for (int i = 0; i < n; i++)
+    {
+      
+printf ("\nb[%d]= ", i);
+      
+scanf ("%d", &b[i]);
+  
+} 
+ 
+for (int i = 0; i < n; i++)
+    {
+      
+if (a[i] == b[i])
+	{
+	  
+p++;
+	
+}
+    
+}
+  
+if (p == n)
+    {
+      
+printf ("\nYES");
+    
+}
+  
+  else
+    {
+      
+printf ("\nNO");
+    
+}
+
+}
