@@ -1,0 +1,42 @@
+#include<stdio.h>
+void
+main ()
+{
+  int n, m;
+  printf ("enter order of matrix\n");
+  scanf ("%d %d", &n, &m);
+  int a[n][m], b[m][n];
+  printf ("enter element in array\n");
+  for (int i = 0; i < n; i++)
+    {
+      for (int j = 0; j < m; j++)
+	{
+	  printf ("a[%d][%d]= ", i, j);
+	  scanf ("%d", &a[i][j]);
+	}
+    }
+  printf ("\n");
+  for (int i = 0; i < n; i++)
+    {
+      for (int j = 0; j < m; j++)
+	{
+	  printf ("%d ", a[i][j]);
+
+	}
+      printf ("\n");
+
+    }
+  printf ("\n");
+  printf ("the tranpose of a is \n");
+  for (int i = 0; i < m; i++)
+    {
+      for (int j = 0; j < n; j++)
+	{
+	  b[i][j] = a[j][i];
+	  printf ("%d ", b[i][j]);
+
+	}
+      printf ("\n");
+    }
+
+}
