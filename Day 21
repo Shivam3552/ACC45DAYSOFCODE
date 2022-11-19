@@ -1,0 +1,54 @@
+
+
+#include<stdio.h>
+  void
+main ()
+{
+  
+int X, Y, N;
+  
+    //x is price of normal size burger,y is for medium,and N is the amount of money that you have;
+    printf
+    ("enter the price of normal and medium size burger ,amount of money you have");
+  
+scanf ("%d %d %d", &X, &Y, &N);
+  
+if (N > X && N < Y)
+    {
+      
+printf ("Normal");
+    
+}
+  
+  else if (N > X && N > Y)
+    {
+      
+if (N - Y >= X)
+	{
+	  
+printf ("both");
+	
+ 
+}
+      
+      else
+	{
+	  
+printf ("medium");
+	
+}
+    
+}
+  
+ 
+  else
+    {
+      
+printf ("no burger");
+    
+}
+
+}
+
+
+  
