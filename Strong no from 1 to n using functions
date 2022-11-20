@@ -1,0 +1,84 @@
+#include<stdio.h>
+int
+pw (int k, int l)
+{
+  
+if (l == 0)
+    {
+      
+return 1;
+    
+}
+  else
+    {
+      
+return k * pw (k, l - 1);
+    
+}
+
+}
+
+
+int
+an (int a, int n)
+{
+  
+ 
+if (a < 10)
+    {
+      
+return pw (a, n);
+    
+ 
+}
+  else
+    {
+      
+return pw (a % 10, n) + an (a / 10, n);
+    
+}
+
+}
+
+
+void
+main ()
+{
+  
+int c = 0, n;
+  
+printf ("enter n");
+  
+scanf ("%d", &n);
+  
+ 
+for (int i = 1; i <= n; i++)
+    {
+      
+int k = i;
+      
+int p = 0;
+      
+while (k != 0)
+	{
+	  
+int l = k % 10;
+	  
+p++;
+	  
+k = k / 10;
+	
+} 
+c = an (i, p);
+      
+if (c == i)
+	{
+	  
+printf ("%d ", i);
+	
+}
+    
+ 
+}
+
+}
