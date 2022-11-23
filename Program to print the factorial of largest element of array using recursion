@@ -1,0 +1,87 @@
+
+#include<stdio.h>
+  int
+fac (int n)
+{
+  
+if (n == 0 || n == 1)
+    {
+      
+return 1;
+    
+}
+  
+  else
+    {
+      
+return n * fac (n - 1);
+    
+}
+
+}
+
+
+int
+lar (int *p, int i, int n, int lr)
+{
+  
+if (i < n)
+    {
+      
+if (*(p + i) > lr)
+	{
+	  
+lr = *(p + i);
+	
+}
+      
+return lar (p, i + 1, n, lr);
+    
+}
+  
+  else if (i = n - 1)
+    {
+      
+if (lr < *(p + n - 1))
+	{
+	  
+lr = *(p + n - 1);
+	
+}
+      
+return fac (lr);
+    
+}
+
+}
+
+
+ 
+void
+main ()
+{
+  
+int n, c, lr = 0;
+  
+printf ("enter the length of array\n");
+  
+scanf ("%d", &n);
+  
+int a[n];
+  
+printf ("enter the element in array\n");
+  
+for (int i = 0; i < n; i++)
+    {
+      
+scanf ("%d", &a[i]);
+    
+} 
+c = lar (a, 0, n, lr);
+  
+printf ("%d", c);
+
+} 
+
+  
+
