@@ -1,0 +1,45 @@
+
+#include<stdio.h>
+void
+main ()
+{
+  
+int N, X, l, k = 0;		//N is number of gifts,and X is fav toys;
+  printf ("enter number of gifts and your fav toy\n");
+  
+scanf ("%d %d", &N, &X);
+  
+printf ("enter gifts number\n");
+  
+for (int i = 1; i <= N; i++)
+    {
+      
+scanf ("%d", &l);
+      
+if (l == X)
+	{
+	  
+k++;
+	
+}
+    
+ 
+}
+  
+if (k > 0)
+    {
+      
+printf ("\nyes");
+    
+}
+  else
+    {
+      
+printf ("no");
+    
+}
+
+}
+
+
+
