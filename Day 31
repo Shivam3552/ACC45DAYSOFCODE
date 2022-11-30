@@ -1,0 +1,29 @@
+#include<stdio.h>
+int
+count (int x)
+{
+  if (x < 10)
+    {
+      return 1;
+    }
+  else
+    {
+      return 1 + count (x / 10);
+    }
+}
+
+void
+main ()
+{
+  int x, c;
+  printf ("enter your pin\n");
+  scanf ("%d", &x);
+  c = count (x);
+  while (c != 4)
+    {
+      printf ("enter pin again\n");
+      scanf ("%d", &x);
+      c = count (x);
+    }
+  printf ("you will be given cash \n");
+}
