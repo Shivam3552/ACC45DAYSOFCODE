@@ -1,0 +1,19 @@
+#include<stdio.h>
+void fin(int n ,int*p,int*q){
+    *p=n%10;
+    int rem;
+    while(n!=0){
+        rem=n%10;
+        *q=rem;
+        n=n/10;
+        
+    }
+    
+}
+    void main(){
+        int n,fd,ld;
+        printf("enter the number\n");
+        scanf("%d",&n);
+        fin(n,&ld,&fd);
+        printf("ld=%d,fd=%d",ld,fd);
+    }
