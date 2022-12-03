@@ -1,0 +1,47 @@
+
+
+//Write a program in C to find the factorial of a given number using pointers and recursion.
+#include<Stdio.h>
+  int
+fact (int *p)
+{
+  
+*p = *p - 1;
+  
+if (*p == 1 || *p == 0)
+    {
+      
+return 1;
+    
+}
+  
+  else
+    {
+      
+return *p * fact (p);
+    
+}
+
+}
+
+
+void
+main ()
+{
+  
+int a, b, c;
+  
+printf ("enter the number \n");
+  
+scanf ("%d", &a);
+  
+b = a + 1;
+  
+c = fact (&b);
+  
+printf ("%d", c);
+
+ 
+} 
+
+
