@@ -1,0 +1,41 @@
+/
+
+  
+#include<stdio.h>
+  int
+fun (int x)
+{
+  
+if (x < 0)
+    {
+      
+return 1;
+    
+}
+  else
+    {
+      
+return 0;
+    
+}
+
+}
+
+
+void
+main ()
+{
+  
+int x, c;
+  
+printf ("enter the number\n");
+  
+scanf ("%d", &x);
+  
+c = fun (x);
+  
+printf ("%d", c);
+
+} 
+
+
