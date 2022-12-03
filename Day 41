@@ -1,0 +1,46 @@
+
+
+#include<stdio.h>
+  void
+main ()
+{
+  
+int X, Y, M, N, Z;
+  
+float cp, cd;
+  
+    //x and y are price of diesel and petrol respectively,m and n are average of diesel and petrol,z is distance travelled;
+    printf
+    ("enter cost of diesel and petrol ,enter average of diesel and petrol ,distance travelled");
+  
+scanf ("%d %d %d %d %d", &X, &Y, &M, &N, &Z);
+  
+cd = X / M * Z;
+  
+cp = Y / N * Z;
+  
+if (cp > cd)
+    {
+      
+printf ("diesel");
+    
+}
+  else if (cp < cd)
+    {
+      
+printf ("petrol");
+    
+}
+  else
+    {
+      
+printf ("it will cost you equally");
+    
+}
+
+ 
+ 
+}
+
+
+
