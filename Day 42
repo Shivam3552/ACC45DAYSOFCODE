@@ -1,0 +1,39 @@
+
+
+#include<stdio.h>
+  int
+count (int x)
+{
+  
+if (x < 10)
+    {
+      
+return 1;
+    
+}
+  else
+    {
+      
+return 1 + count (x / 10);
+    
+}
+
+}
+
+
+void
+main ()
+{
+  
+int x, c;
+  
+printf ("enter the number\n");
+  
+scanf ("%d", &x);
+  
+c = count (x);
+  
+printf ("\n%d", c);
+
+ 
+}
