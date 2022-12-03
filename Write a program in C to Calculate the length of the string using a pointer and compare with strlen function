@@ -1,0 +1,46 @@
+
+// Write a program in C to Calculate the length of the string using a pointer and compare with strlen function.
+#include<stdio.h>
+#include<string.h>
+void
+main ()
+{
+  
+char ch[50], i = 0, c = 0, l = 0;
+  
+char *p = ch;
+  
+printf ("enter string\n");
+  
+gets (ch);
+  
+while (*(p + i) != '\0')
+    {
+      
+c++;
+      
+i++;
+    
+}
+  
+l = strlen (ch);
+  
+if (l == c)
+    {
+      
+printf ("both are equal\n");
+    
+}
+  
+  else
+    {
+      
+printf ("no");
+    
+}
+
+ 
+}
+
+
+
